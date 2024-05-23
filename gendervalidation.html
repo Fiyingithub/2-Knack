@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Update the CSS for body to include backdrop-filter and inset positioning */
+    body {
+      position: relative;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(./asset/bg-2.jfif);
+      background-size: contain;
+      /* background-repeat: no-repeat; */
+      background-attachment: fixed;
+      backdrop-filter: blur(1.4px);
+    }
+    /* CSS for modal overlay */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="modal-overlay">
+    <div class=" w-[80vw] md:w-[40vw] bg-white border-2 shadow-lg h-[230px] flex flex-col px-5 lg:px-20   rounded-xl lg:rounded-full py-6 backdrop-blur-lg"> 
+      <div class="flex">
+        <img src="asset/location (1).png" class="w-[25px]" alt="location icon" >
+        <p id="currLocation"></p>
+      </div>
+ 
+      <h1 class="font-bold text-3xl text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-500">Are you a ..</h1>
+      <div class="flex justify-between w-[90%] lg:w-[70%] absolute bottom-10 ">
+        <button
+          class="bg-purple-600 text-white dm-sans-regular py-2 px-5 hover:opacity-80 rounded-full man"
+          onclick="redirect()"
+        >
+          MAN
+        </button>
+        <button
+          class="bg-purple-600 text-white py-2 px-3 rounded-full hover:opacity-80 dm-sans-regular woman"
+          onclick="redirect2()"
+        >
+          WOMAN
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function redirect() {
+      alert("You will be redirected to the login page ....");
+      window.location.href = "./malesignup.html"; // corrected the syntax here
+    }
+    function redirect2() {
+      alert("You will be redirected to the login page");
+      window.location.href = "./femalesignup.html"; // corrected the syntax here
+
+
+   
+
+    }
+
+ 
+    window.addEventListener('load', () => {
+      if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+          function(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            const locationDiv = document.getElementById("currLocation");
+            locationDiv.textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
+            
+          },
+          function(error) {
+            // Error callback
+            console.error("Error getting geolocation:", error.message);
+            const locationDiv = document.getElementById("currLocation");
+            locationDiv.textContent = "Unable to retrieve location.";
+          }
+        );
+      } else {
+        // Geolocation is not supported
+        console.error("Geolocation is not supported by this browser.");
+        const locationDiv = document.getElementById("currLocation");
+        locationDiv.textContent = "Geolocation is not supported by this browser.";
+      }
+    });
+  </script>
+</body>
+</html>

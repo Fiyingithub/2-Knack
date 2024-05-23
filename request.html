@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    
+</head>
+<body  >
+    <div class="bg-white w-[100vw] lg:px-16 lg:w-[100vw] h-[100vh] lg:h-[620px]  ">
+        
+        <!-- search bar -->
+        <nav class="flex text-white pt-[20px] lg:pt-[40px] " >
+            <div class="flex">
+                <img onclick="menuBtn()" class="w-8 h-8 ml-[40px] lg:hidden" id="menu" src="/asset/menu.png" alt="menu">
+
+                <h1 class=" animate-bounce  pt-[8px] text-purple-800 text-3xl pl-[110px] lg:text-4xl lg:pl-[30px] lg:w-[20vw] font-[700]  " >  TO-KNACK</h1>
+            </div>
+            <div class="flex">
+                <input type="text" placeholder="Search..." class=" hidden lg:block h-[50px] rounded-[50px] pl-[60px]  bg-gray-200 lg:ml-[25px] lg:w-[63vw]  text-purple-800 placeholder:text-0 outline-none">
+                <ion-icon name="search-outline" class="hidden lg:block w-[20px] h-[20px] text-purple-800 ml-[-50px] mt-[20px] font-[700]" ></ion-icon>
+               <ion-icon name="notifications-outline" class="hidden cursor-pointer lg:block w-[30px] h-[30px] text-purple-800 ml-[40px] mt-[10px]" ></ion-icon>
+               <ion-icon name="logo-wechat" class="hidden lg:block w-[30px] h-[30px] text-purple-800 cursor-pointer ml-[10px] mt-[10px]"  ></ion-icon>
+               <img src="/asset/1 (1).webp" alt="" class="cursor-pointer hidden lg:block h-[30px] rounded-[20px] ml-[10px] mt-[10px] ">
+            </div>
+        </nav><br class="hidden lg:block"><br class="hidden lg:block">
+        <!-- End of search bar -->
+
+
+        <div class="flex gap-1 justify-center lg:justify-between">
+
+            <div class="hidden lg:block w-[300px] md:w-[350px] mt-6 lg:mt-0 ml-[-70px] md:ml-[-353px] lg:ml-0 h-[600px] px-10 pt-12 bg-purple-800 rounded-t-[40px] rounded-b-[40px]" id="menubar">
+
+                <a class="flex  text-white ml-4 font-[700] text-[20px]">
+                    <ion-icon name="home-outline" class="mt-[-5px] w-10 h-10"></ion-icon>
+                    <p onclick="page()" class="ml-2 cursor-pointer"> Home</p>
+                </a><br>
+    
+                <a href="femaledashboard.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><img src="/asset/1 (1).webp" alt="" class="w-[22px] h-[22px] rounded-[20px] mt-1   "><p class="ml-2"> Profile</p></div></a>
+
+                <a href="updateprofile.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-add-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1">Update Profile</p></div></a>
+    
+                <a href="uploadimage.html"><div class="flex text-white hover:font-[700] hover:text-[19px] mt-[20px]"><ion-icon class="mt-1 w-[20px] h-[20px]" name="videocam-outline"></ion-icon><p class="ml-2"> Upload video/image</p></div></a>
+    
+                <a href="addwallet.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="wallet-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1">Add Wallet</p></div></a>
+    
+                <a href="request.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1  w-[20px] h-[20px]" ></ion-icon><p class="ml-1">Request</p></div></a>
+    
+                <a href=""><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="chatbox-ellipses-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1">Meetup Form</p></div></a>
+                   
+                <a href=""><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1"> Logout</p></div></a>
+            </div>
+
+            <div class="" id="content">
+                <div class="lg:w-[70vw] mt-4 lg:mt-0 w-[100vw] md:[100vw] lg:rounded-t-[40px] lg:rounded-b-[40px] h-[870px] md:h-[100vh] lg:pl-10 lg:h-[600px] bg-purple-800">
+                    
+
+                    <div class="" >
+
+                        <div class="flex justify-center  lg:justify-between pt-6 px-20">
+                            <div class="flex gap-4">
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="notifications-outline" class=" text-white w-[24px] h-[24px]" ></ion-icon>
+                                </div>
+        
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="mail-open-outline" class=" text-white w-[24px] h-[24px] "></ion-icon>
+                                </div>
+                
+                                <div class="text-white cursor-pointer">
+                                    <ion-icon name="videocam-off-outline" class="w-[24px] h-[24px] mr-4"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class=" cursor-pointer"> 
+                                    <ion-icon name="globe-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+                
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="trash-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+        
+                            
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="person-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+                
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="stats-chart-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+                                </div>
+                           </div>
+      
+                        </div>
+
+                        <div class="">
+                            <div class=" text-center">
+                                <div class="flex justify-between px-10">
+                                    <p class=" mt-[20px] text-white text-3xl font-[500]">Request</p>
+                                    <ion-icon class="mt-[30px] text-white w-[24px] h-[24px] cursor-pointer" name="settings-outline"></ion-icon>
+                                </div>
+                                <br><hr class=" w-[104%] ml-[-40px]">
+                            </div>
+                        
+                           <div class="">
+                             <div class="md:flex md:justify-between pr-6 py-4">
+                                 <div class="flex gap-4 text-white">
+                                    
+                                       <img class="w-8 h-8 rounded-[300px]" src="./asset/1 (1).jpg" alt="pic">
+                                 
+                                    
+                                      <p><b class="mr-1">Ali Mohammed</b><br class="block md:hidden"> Sent you a request.</p>
+
+                                      <p class="text-[13px] ml-[-152px] md:mt-1 mt-12">1hr ago</p>
+                        
+                                      <div class="flex md:ml-48 md:gap-10">
+                                        <button class="flex text-green-500 font-[600] hover:opacity-80 ml-48">
+                                            <div class="">Accept</div>
+                                            <ion-icon class="mt-1 ml-[2px]" name="checkmark-outline"></ion-icon>
+                                        </button>
+                        
+                                        <button class="flex hover:opacity-80 text-red-600 font-[600]">
+                                            <div class="">Decline</div>
+                                            <i class="bi bi-x mt-[1px]"></i>
+                                        </button>
+                        
+                                        </div>
+                                   </div>
+                                   
+                                 <p class="w-[11px] h-[11px] bg-green-600 rounded-[360px] mt-2"></p>
+                             </div><hr class="w-[104%] ml-[-40px]">
+                        
+                             <div class="flex justify-between pr-6 py-4">
+                                 <div class="flex gap-4 text-white">
+                                      <img class="w-8 h-8 rounded-[300px]" src="/asset/1 (1).webp" alt="pic">
+                                    
+                                      <p><b class="mr-1">Saliu Musiliu</b><br class="md:hidden"> Sent you a request.</p> <p class="text-[13px] ml-[-10px] mt-1">2hr ago</p>
+                                 </div>
+                        
+                                 <!-- <div class="flex ml-48 gap-10">
+                                     <button class="flex text-green-500 font-[600] hover:opacity-80 ml-[80px]">
+                                         <div class="">Accept</div>
+                                         <ion-icon class="mt-1 ml-[2px]" name="checkmark-outline"></ion-icon>
+                                     </button>
+                        
+                                     <button class="flex hover:opacity-80 text-red-600 font-[600]">
+                                         <div class="">Decline</div>
+                                         <i class="bi bi-x mt-[1px]"></i>
+                                     </button>
+                        
+                                 </div> -->
+                        
+                                 <p class="w-[11px] h-[11px] bg-green-600 rounded-[360px] mt-2"></p>
+                             </div><hr class=" w-[104%] ml-[-40px]">
+                        
+                             <div class="flex justify-between pr-6 py-4">
+                                 <div class="flex gap-4 text-white">
+                                    <img class="w-8 h-8 rounded-[300px]" src="/asset/1 (2).jpg" alt="pic">
+                                    
+                                    <p><b class="mr-1">Otunba Lamba</b> Sent you a request.</p><p class="text-[13px] ml-[-10px] mt-1">2weeks ago</p>
+                                 </div>
+                        
+                                 <p class="w-[11px] h-[11px] bg-red-600 rounded-[360px] mt-2"></p>
+                             </div><hr class=" w-[104%] ml-[-40px]">
+                        
+                             <div class="flex justify-between pr-6 py-4">
+                                 <div class="flex gap-4 text-white">
+                                       <img class="w-8 h-8 rounded-[300px]" src="/asset/1 (4).webp" alt="pic">
+                                    
+                                       <p><b class="mr-1">Joshua Adams</b> Sent you a request.</p><p class="text-[13px] ml-[-10px] mt-1">3weeks ago</p>
+                                  </div>
+                                 
+                                   <p class="w-[11px] h-[11px] bg-red-600 rounded-[360px] mt-2"></p>
+                             </div><hr class=" w-[104%] ml-[-40px]">
+                        
+                             <div class="flex justify-between pr-6 py-4">
+                                 <div class="flex gap-4 text-white">
+                                      <img class="w-8 h-8 rounded-[300px]" src="/asset/1 (5).webp" alt="pic">
+                                    
+                                      <p><b class="mr-1">Sergio Ramos</b> Sent you a request.</p><p class="text-[13px] ml-[-10px] mt-1">1months ago</p>
+                                   </div>
+
+                                    <p class="w-[11px] h-[11px] bg-red-600 rounded-[360px] mt-2"></p>
+                               </div><hr class=" w-[104%] ml-[-40px] ">
+                           </div>
+                        
+                            
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+           
+           
+           
+           
+            
+
+    <script>
+
+
+        function menuBtn() {
+            const menu = document.getElementById("menu");
+            const content = document.getElementById("content");
+            const menubar = document.getElementById("menubar");
+            
+            
+            document.getElementById("content").classList.add("hidden");
+            document.getElementById("menubar").classList.remove("hidden");
+        }
+
+        function page() {
+            const menu = document.getElementById("menu");
+            const content = document.getElementById("content");
+            const menubar = document.getElementById("menubar");  
+
+            document.getElementById("content").classList.remove("hidden");
+            document.getElementById("menubar").classList.add("hidden");
+       }
+       
+
+       
+    </script>
+</body>
+</html>
+
+
+

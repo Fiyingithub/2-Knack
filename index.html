@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>To-nack | Home</title>
+
+      <link rel="stylesheet" href="style.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+      
+  
+    
+         <!-- Bootstrapicons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body class="">
+       <header class="header2">
+            <nav class="flex w-[98vw]   mx-2 md:mx-5 py-3  justify-between ">
+                  <div class="flex px-0 space-x-0 md:space-x-2 md:items-center">
+                        <img src="./asset/logo-removebg-preview.png" alt="" class="cursor w-[50px] h-[40px] sm:w-[80px]">
+                        <h1 class="font-bold text-lg sm:text-3xl cursor-pointer text-purple-700 animate-pulse jersey-15-regular dm-sans-regular" role="button" >To Nack</h1>
+                  </div>
+                 
+                  <div class=" py-2 md:py-0 space-y-2  md:space-y-0 space-x-10 mr-2 md:mx-5  md:items-center hidden  bg-black md:bg-transparent md:flex" id="navContent">
+                    <div  class="cursor-pointer exitBtn absolute right-[10%] md:hidden" role="button" onclick="exitNav()"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/cancel.png" alt="cancel"/></div>
+                    <div class="space-y-6 md:space-y-0 md:space-x-10  flex flex-col md:flex-row">
+                        <a href="#" class="font-semibold text-md hover:text-purple-300 text-purple-400">Home</a>
+                        <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Contact</a>
+                        <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Blog</a>
+                        <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Privacy</a>
+                     </div>
+                    <a href="gendervalidation.html">
+                    <button class="mr-5 text-white text-xs md:text-md  rounded-full bg-gradient-to-r from-purple-600 to-pink-400 border-2 border-purple-600  font-semibold px-5 py-1 md:py-3 text-center w-[200px] md:w-[180px] h-[46px] hover:opacity-7">Sign Up/ Sign In</button>
+                    </a>
+                  </div>
+
+                
+                   <button class="text-white flex md:hidden mx-8 animate-pulse cursor-pointer" onclick="openNav()"  role="button" id="dropBtn">
+                  
+                   <img width="48" height="64" src="https://img.icons8.com/wired/64/FFFFFF/xbox-menu.png" alt="xbox-menu" role="button" />
+                  </button> 
+               
+            </nav>
+
+
+             <section class="header-content absolute  mx-3 sm:mx-10">
+                  <div class=" space-y-8 header-title-cont px-0 sm:px-8 ">
+                        <!-- <p class="font-bold more">Free HookUp Site for Nigerian Adults</p>  -->
+                        <h1  class="calligraffitti-regular mt-44 text-5xl  sm:text-6xl font-bold text-purple-400 dm-sans-regular header-title " id="el">  </h1>
+                        <div class="flex space-x-8">
+                              <button class="px-3 py-2 bg-gradient-to-r from-purple-600 to-pink-400 w-[150px] h-[48px] rounded-xl dm-sans-regular"> <p class="animate-pulse">Hookup NOW !</p></button>
+                              
+                        </div>
+                        <div class="flex relative w-[300px] place-items-center ">
+                              <input type="text" placeholder="Search ladies preferences" class=" text-black  w-[70vw] md:w-[300px] text-[13px] sm:text-[17px] h-[48px] border-2 rounded-full px-5 border-purple-600 absolute">
+                              <img   src="https://img.icons8.com/nolan/64/search.png" alt="search" class=" placeholder:text-xs absolute w-[25px] sm:w-[30px] mx-[57vw] sm:mx-[60vw] md:mx-[85%]"/>
+                        </div>
+                        
+                        
+                        
+                  </div>
+             </section>
+       </header>
+
+
+       <main>
+
+              <section class=" overflow-x-hidden  photo-group-1  py-8 w-screen bg-black ">
+                  <div >
+                        <h1 class="calligraffitti-regular text-white text-center dm-sans-regular mt-14 font-semibold italic text-5xl" >Exotic <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-300 " data-aos="slide-right">women</span></h1>
+                  </div>
+                  <div class=" slider-wrapper mt-10 mx-auto py-5 w-[90vw] pb-5 rounded-xl">
+                        
+                        <div class="my-slider flex  space-x-16">
+                          <div class="relative">
+                            <img src="asset/olosho3.jfif" alt="" class="shadow-lg exotic-women rounded-2xl">
+                            <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+                              <h1 class=" text-xl
+                              font-bold  dm-sans-regular">Mandy</h1>  
+                              <h4 class="font-semibold dm-sans-regular">Age: 26</h4>
+                              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Lekki</span>                        
+                            </div>
+                          </div>
+                          
+                          <div class="relative">
+                            <img src="asset/hookupgirl.jfif" alt="" class="shadow-lg rounded-2xl exotic-women">
+                            <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+                              <h1 class=" text-xl
+                              font-bold  dm-sans-regular">Hannah</h1>  
+                              <h4 class="font-semibold dm-sans-regular">Age: 22</h4>
+                              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Ikorodu</span>                        
+                            </div>
+                          </div>
+
+                          <div class="relative">
+                            <img src="asset/12.webp" alt="" class="shadow-lg  rounded-2xl exotic-women">
+                            <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+                              <h1 class=" text-xl
+                              font-bold  dm-sans-regular">Nikki</h1>  
+                              <h4 class="font-semibold dm-sans-regular">Age: 22</h4>
+                              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i><span>Ibadan</span>                        
+                            </div>
+                          </div>
+
+                          <div class="relative ">
+                            <img src="asset/young2.jfif" alt="" class="shadow-lg exotic-women rounded-2xl exotic-women" style="object-fit: cover;">
+                            <div class=" profile-desc absolute top-[62%] px-10 py-2 space-y-4">
+                              <h1 class=" text-xl
+                              font-bold  dm-sans-regular">Melissa</h1>  
+                              <h4 class="font-semibold dm-sans-regular">Age: 31</h4>
+                              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span> Festac</span>                        
+                            </div>
+                          </div>              
+                          
+                          <div class="relative">
+                            <img src="asset/young1.jfif" alt="" class="shadow-lg exotic-women rounded-2xl" style="object-fit: cover;">
+                            <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+                              <h1 class=" text-xl
+                              font-bold  dm-sans-regular">Goodness</h1>  
+                              <h4 class="font-semibold dm-sans-regular">Age: 28</h4>
+                              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span> VI</span>                        
+                            </div>
+                          </div>
+
+                          <div class="relative">
+                            <img src="asset/olosho1.jfif" alt="" class="shadow-lg exotic-women rounded-2xl" style="object-fit: cover;">
+                            <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+                              <h1 class=" text-xl
+                              font-bold  dm-sans-regular">Goodness</h1>  
+                              <h4 class="font-semibold dm-sans-regular">Age: 28</h4>
+                              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Mowe</span>                        
+                            </div>
+                          </div>
+                         </div>
+                     </div>
+                     <div class="click-container flex  md:w-[20vw] mt-12  mx-auto items-center  ">
+                      <div class="mx-auto space-x-8">
+                        <button class="previous text-white border-2 border-purple-600 px-3 py-3.5 rounded-full hover:bg-purple-600 hover:text-white">prev</button>
+                      <button class="previous text-white border-2 border-purple-600 px-3 py-3.5 rounded-full hover:bg-purple-600 hover:text-white next">next</button>
+                     </div>
+                      </div>
+                  </div>
+            </section>
+
+
+       <!-- CAROUSEL  2  -->
+
+       <section class=" overflow-x-hidden photo-group-2  py-8 w-screen bg-black ">
+         <div class=" slider-wrapper  mx-auto py-5 w-[90vw] pb-5 rounded-xl">
+              
+              <div class="carousel2 flex  space-x-16">
+                <div class="relative">
+                  <img src="asset/sexy1.jfif" alt="" class="shadow-lg exotic-women rounded-2xl">
+                  <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+                    <h1 class=" text-xl
+                    font-bold  dm-sans-regular">Mandy</h1>  
+                    <h4 class="font-semibold dm-sans-regular">Age: 26</h4>
+                    <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Lekki</span>                        
+                  </div>
+                </div>
+                
+                <div class="relative">
+                  <img src="asset/sexy2.jfif" alt="" class="shadow-lg rounded-2xl exotic-women">
+                  <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+                    <h1 class=" text-xl
+                    font-bold  dm-sans-regular">Hannah</h1>  
+                    <h4 class="font-semibold dm-sans-regular">Age: 22</h4>
+                    <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Ikorodu</span>                        
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <img src="asset/sexy3.jfif" alt="" class="shadow-lg  rounded-2xl exotic-women">
+                  <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+                    <h1 class=" text-xl
+                    font-bold  dm-sans-regular">Nikki</h1>  
+                    <h4 class="font-semibold dm-sans-regular">Age: 22</h4>
+                    <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i><span>Ibadan</span>                        
+                  </div>
+                </div>
+
+                <div class="relative ">
+                  <img src="asset/sexy5.jfif" alt="" class="shadow-lg exotic-women rounded-2xl exotic-women" style="object-fit: cover;">
+                  <div class=" profile-desc absolute top-[62%] px-10 py-2 space-y-4">
+                    <h1 class=" text-xl
+                    font-bold  dm-sans-regular">Melissa</h1>  
+                    <h4 class="font-semibold dm-sans-regular">Age: 31</h4>
+                    <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span> Festac</span>                        
+                  </div>
+                </div>              
+                
+                <div class="relative">
+                  <img src="asset/young1.jfif" alt="" class="shadow-lg exotic-women rounded-2xl" style="object-fit: cover;">
+                  <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+                    <h1 class=" text-xl
+                    font-bold  dm-sans-regular">Goodness</h1>  
+                    <h4 class="font-semibold dm-sans-regular">Age: 28</h4>
+                    <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span> VI</span>                        
+                  </div>
+                </div>
+
+                <div class="relative">
+                  <img src="asset/olosho1.jfif" alt="" class="shadow-lg exotic-women rounded-2xl" style="object-fit: cover;">
+                  <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+                    <h1 class=" text-xl
+                    font-bold  dm-sans-regular">Goodness</h1>  
+                    <h4 class="font-semibold dm-sans-regular">Age: 28</h4>
+                    <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Mowe</span>                        
+                  </div>
+                </div>
+               </div>
+           </div>
+           <div class="click-container flex  md:w-[20vw] mt-12  mx-auto items-center  ">
+            <div class="mx-auto space-x-8">
+              
+           </div>
+            </div>
+        </div>
+  </section>
+       
+  
+          
+
+  <section class=" overflow-x-hidden photo-group-3  py-8 w-screen bg-black ">
+    <div class=" slider-wrapper  mx-auto py-5 w-[90vw] pb-5 rounded-xl">
+         
+         <div class="carousel3 flex  space-x-16">
+           <div class="relative">
+             <img src="asset/sexy1.jfif" alt="" class="shadow-lg exotic-women rounded-2xl">
+             <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+               <h1 class=" text-xl
+               font-bold  dm-sans-regular">Mandy</h1>  
+               <h4 class="font-semibold dm-sans-regular">Age: 26</h4>
+               <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Lekki</span>                        
+             </div>
+           </div>
+           
+           <div class="relative">
+             <img src="asset/sexy2.jfif" alt="" class="shadow-lg rounded-2xl exotic-women">
+             <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+               <h1 class=" text-xl
+               font-bold  dm-sans-regular">Hannah</h1>  
+               <h4 class="font-semibold dm-sans-regular">Age: 22</h4>
+               <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Ikorodu</span>                        
+             </div>
+           </div>
+
+           <div class="relative">
+             <img src="asset/sexy3.jfif" alt="" class="shadow-lg  rounded-2xl exotic-women">
+             <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+               <h1 class=" text-xl
+               font-bold  dm-sans-regular">Nikki</h1>  
+               <h4 class="font-semibold dm-sans-regular">Age: 22</h4>
+               <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i><span>Ibadan</span>                        
+             </div>
+           </div>
+
+           <div class="relative ">
+             <img src="asset/sexy5.jfif" alt="" class="shadow-lg exotic-women rounded-2xl exotic-women" style="object-fit: cover;">
+             <div class=" profile-desc absolute top-[62%] px-10 py-2 space-y-4">
+               <h1 class=" text-xl
+               font-bold  dm-sans-regular">Melissa</h1>  
+               <h4 class="font-semibold dm-sans-regular">Age: 31</h4>
+               <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span> Festac</span>                        
+             </div>
+           </div>              
+           
+           <div class="relative">
+             <img src="asset/young1.jfif" alt="" class="shadow-lg exotic-women rounded-2xl" style="object-fit: cover;">
+             <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+               <h1 class=" text-xl
+               font-bold  dm-sans-regular">Goodness</h1>  
+               <h4 class="font-semibold dm-sans-regular">Age: 28</h4>
+               <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span> VI</span>                        
+             </div>
+           </div>
+
+           <div class="relative">
+             <img src="asset/olosho1.jfif" alt="" class="shadow-lg exotic-women rounded-2xl" style="object-fit: cover;">
+             <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+               <h1 class=" text-xl
+               font-bold  dm-sans-regular">Goodness</h1>  
+               <h4 class="font-semibold dm-sans-regular">Age: 28</h4>
+               <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Mowe</span>                        
+             </div>
+           </div>
+          </div>
+      </div>
+      <div class="click-container flex  md:w-[20vw] mt-12  mx-auto items-center  ">
+       <div class="mx-auto space-x-8">
+         
+      </div>
+       </div>
+   </div>
+</section>
+            
+               
+  <!-- CAROUSEL 4      -->
+         
+
+ <section class=" overflow-x-hidden  photo-group-4  py-8 w-screen bg-black " id="sugarmums">
+   <div class=" slider-wrapper mx-auto py-5 w-[90vw] pb-5 rounded-xl">
+        
+        <div class="carousel4 flex  space-x-16 ">
+          <div class="relative ">
+            <img src="asset/milf1.jfif" alt="" class="shadow-lg exotic-women rounded-2xl">
+            <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+              <h1 class=" text-xl
+              font-bold  dm-sans-regular">Mandy</h1>  
+              <h4 class="font-semibold dm-sans-regular">Age: 26</h4>
+              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Lekki</span>                        
+            </div>
+          </div>
+          
+          <div class="relative">
+            <img src="asset/milf2.jfif" alt="" class="shadow-lg rounded-2xl exotic-women">
+            <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+              <h1 class=" text-xl
+              font-bold  dm-sans-regular">Hannah</h1>  
+              <h4 class="font-semibold dm-sans-regular">Age: 22</h4>
+              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span>Ikorodu</span>                        
+            </div>
+          </div>
+
+          <div class="relative">
+            <img src="asset/milf3.jfif" alt="" class="shadow-lg  rounded-2xl exotic-women">
+            <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+              <h1 class=" text-xl
+              font-bold  dm-sans-regular">Nikki</h1>  
+              <h4 class="font-semibold dm-sans-regular">Age: 22</h4>
+              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i><span>Ibadan</span>                        
+            </div>
+          </div>
+
+          <div class="relative ">
+            <img src="asset/milf2.jfif" alt="" class="shadow-lg exotic-women rounded-2xl exotic-women" style="object-fit: cover;">
+            <div class=" profile-desc absolute top-[62%] px-10 py-2 space-y-4">
+              <h1 class=" text-xl
+              font-bold  dm-sans-regular">Melissa</h1>  
+              <h4 class="font-semibold dm-sans-regular">Age: 31</h4>
+              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span> Festac</span>                        
+            </div>
+          </div>              
+          
+          <div class="relative">
+            <img src="asset/milf5.jfif" alt="" class="shadow-lg exotic-women rounded-2xl" style="object-fit: cover;">
+            <div class=" profile-desc absolute top-[60%] px-10 py-3 space-y-4">
+              <h1 class=" text-xl
+              font-bold  dm-sans-regular">Goodness</h1>  
+              <h4 class="font-semibold dm-sans-regular">Age: 28</h4>
+              <i class="bi bi-geo-alt-fill text-red-600 text-lg dm-sans-regular"></i>  <span> VI</span>                        
+            </div>
+          </div>
+
+                   </div>
+     </div>
+     <div class="click-container flex  md:w-[20vw] mt-12  mx-auto items-center  ">
+      <div class="mx-auto space-x-8">
+        
+     </div>
+      </div>
+  </div>
+  <div>
+    <a href="web.html" class=" ml-[60%] cursor-pointer md:ml-[80%]   mt-[50px] bg-gradient-to-r from-purple-500 to-pink-500 text- px-4 py-2 rounded-full hover:opacity-80 text-white calligraffitti-regular tracking-wide font-semibold"> 
+      see more</a>
+  </div>
+</section>
+
+    
+            <section class=" scroll-mt-24 photo-group-2  bg-gradient-to-tr from-purple-800 to-pink-400 py-16 pb-5 md:px-10 text-white">
+                  <div class=" w-screen md:w-[80vw] mx-auto md:space-x-14   flex  flex-col align-middle md:flex-row-reverse justify-between">
+                    <div class=" mx-auto md:mx-0 w-[80%] md:w-[60%]">
+                      <p class="place-self-center">To-nack is aworld of fun and pleasure!.  Whether you're looking for a one-night stand or a  long-term friend-with-benefits, sugar mummies and cougars, we've got  you covered. Join our community of like-minded people and explore your sexual desires in a safe place </p>
+                      <a href="#sugarmums">
+                        <button class=" mt-10 hover:bg-purple-700 dm-sans-regular bg-transparent border-2 px-3 rounded-xl py-2">Check out cougars!</button>
+                      </a>
+                    </div>
+                     
+                     <img src="./asset/sexybg.png" alt="" class="sexybg">
+                   </div>    
+      
+            </section>
+
+             <!-- end of section -->
+
+             <section class="flex flex-col items-center justify-center py-24 space-y-5">
+              <h1 class="text-4xl font-semibold dm-sans-regular text-center text-purple-700" >Have an emergency?</h1>
+              <p class="text-center w-[60vw]">
+                In case of emergency, please reach out to us immediately. Your safety and well-being are our top priorities. We're here to help, support, and guide you through any situation you may encounter.
+                
+                Please don't hesitate to contact us if you feel uncomfortable, threatened, or in need of assistance. Our dedicated team is available 24/7 to provide confidential support and connect you with resources that can help.</p>
+                 
+                <div class="text-center space-x-4 dm-sans-regular ">You can reach out to us @ 
+                  <p class="font-semibold mt-2">
+                    Email: <a href="mailto:funmmy565@gmail.com" class="text-purple-600 font-normal">funmmy565@gmail.com</a>
+                  </p>
+                  <p class="font-semibold mt-2">Hotline: <a href="tel:+23455677899" class="text-purple-600 font-normal">+234556778999</a></p>
+                 
+                
+                 </div>
+
+             </section>
+       </main>
+
+       <footer class="px-5 bg-purple-900 text-white mt-16 footer dm-sans-regular">
+        <div class="py-5 text-black md:text-white md:px-16">
+            <div class="container">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="md:w-1/3">
+                        <div class="mb-3">
+                            <p class="font-bold text-purple-900 text-lg">Find Your Next Hookup</p>
+                            <p class="">Get connected any time, any day!</p>
+                        </div>
+                        <!-- <address class="tex">
+                            Office Address: <br>
+                            Shop G18 Activities, Lasustech, <br>
+                            Ikorodu, Lagos, Nigeria
+                        </address> -->
+                    </div>
+                    <div class="md:w-1/3">
+                        <h5 class="">Programs</h5>
+                        <ul class="mt-2 ">
+                            <li>Advanced Seduction Techniques</li>
+                            <li>Secrets of Pleasure</li>
+                            <li>Exploring Kinks</li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3">
+                        <h5 class="">Explore More</h5>
+                        <ul class="mt-2 ">
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="createaccount.html">Sign Up</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-b border-gray-700 py-2 mt-5 flex justify-between">
+                    <span class="text-black font-semibold dm-sans-regular">© 2024 To-Nack</span>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-purple-900 hover:text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-purple-900 hover:text-white"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-purple-900 hover:text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-purple-900 hover:text-white"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="mt-3 text-white">
+                    <p>For inquiries, contact us via WhatsApp:</p>
+                    <p>+1 (123) 456-7890 | +1 (987) 654-3210</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+              <script>
+                  var typed = new Typed('#el', {
+                    strings: ['Hookup with the sexiest women around! '],
+                    typeSpeed: 30,
+                    showCursor:false
+                  });
+      
+                  const  typed2 = new Typed('#element2', {
+                    strings: ['Explore potential partners '],
+                    typeSpeed: 90,
+                    showCursor:false
+                  });
+      
+                  AOS.init();
+         </script>
+
+
+
+
+       <script >
+            let slider = tns({
+             container: '.my-slider',
+             "animateIn": "jello",
+             "animateOut": "rollOut",
+             "speed": 400,
+             "nav" : false,
+             "swipeAngle": false,
+             // controlsContainer: '#controls',
+             prevButton: '.previous',
+             nextButton: '.next',
+             responsive: {
+               1280: {
+                 items: 3,
+                 gutter: 20
+               },
+               1024: {
+                 items: 2,
+                 gutter: 20
+               },
+               768: {
+                 items: 2,
+                 gutter: 20
+               }
+             }
+           });
+
+           let slider2 = tns({
+        container: '.carousel2',
+        "animateIn": "jello",
+        "animateOut": "rollOut",
+        "speed": 400,
+        "nav": false,
+        "swipeAngle": false,
+        // controlsContainer: '#controls',
+        responsive: {
+            1280: {
+                items: 3,
+                gutter: 16
+            },
+            1024: {
+                items: 2,
+                gutter: 16
+            },
+            768: {
+                items: 2,
+                gutter: 16
+            }
+        }
+    });
+    let slider3 = tns({
+        container: '.carousel3',
+        "animateIn": "jello",
+        "animateOut": "rollOut",
+        "speed": 400,
+        "nav": false,
+        "swipeAngle": false,
+        // controlsContainer: '#controls',
+        responsive: {
+            1280: {
+                items: 3,
+                gutter: 20
+            },
+            1024: {
+                items: 2,
+                gutter: 20
+            },
+            768: {
+                items: 2,
+                gutter: 20
+            }
+        }
+    });
+    let slider4 = tns({
+        container: '.carousel4',
+        "animateIn": "jello",
+        "animateOut": "rollOut",
+        "speed": 400,
+        "nav": false,
+        "swipeAngle": false,
+        // controlsContainer: '#controls',
+        responsive: {
+            1280: {
+                items: 3,
+                gutter: 20
+            },
+            1024: {
+                items: 2,
+                gutter: 20
+            },
+            768: {
+                items: 2,
+                gutter: 20
+            }
+        }
+    });
+    const dropd = document.getElementById('navContent');
+        const button = document.getElementById('dropBtn');
+        const exit = document.getElementsByClassName('exitBtn')[0];
+
+        function openNav() {
+            if (dropd.style.display === "none" || !dropd.style.display) {
+                dropd.style.display = "block";
+                gsap.fromTo(dropd, 
+                    { y: '-100%', opacity: 0 }, 
+                    { y: '0%', opacity: 1, duration: 0.5, ease: 'power1.in' }
+                );
+            } else {
+                gsap.to(dropd, 
+                    { y: '-100%', opacity: 0, duration: 0.5, ease: 'power1.in', onComplete: () => {
+                        dropd.style.display = "none";
+                    }}
+                );
+            }
+        }
+    function exitNav(){
+      gsap.to(dropd, 
+                    { y: '-100%', opacity: 0, duration: 0.5, ease: 'power1.in', onComplete: () => {
+                        dropd.style.display = "none";
+                    }}
+
+                );
+    }
+
+    </script>
+    
+</body>
+</html>

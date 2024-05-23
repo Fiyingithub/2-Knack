@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <script src="Tailwind/tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+</head>
+<body  >
+    <div class="bg-purple-300 w-[100%]  h-screen   ">
+        
+        <!-- search bar -->
+        <div class=" flex   text-purple-800 pt-[20px] lg:pt-[40px] " >
+            <div class="flex px-4 space-x-10 items-center ">
+                <ion-icon name="menu-outline" class="lg:hidden xl:hidden" id="menu"></ion-icon>
+                <h1 class=" animate-bounce text-xl sm:text-2xl md:text-3xl  font-[700] lg:pl-[10px]  ">  2-KNACK</h1>
+            </div>
+            
+             <input type="text" placeholder="search" class=" hidden lg:block xl:block w-[700px] h-[50px] rounded-[50px] pl-[60px]   lg:ml-[60px] lg:w-[600px] xl:ml-[140px]  text-purple-800 placeholder:text-2xl  font-[700] outline-none ">
+            <ion-icon name="search-outline" class="hidden lg:block xl:block w-[20px] h-[20px] text-purple-800 ml-[-50px] mt-[20px] font-[700]" ></ion-icon>
+            <ion-icon name="notifications-outline" class="hidden lg:block xl:block w-[30px] h-[30px] text-purple-800 ml-[45px] mt-[10px]" ></ion-icon>
+            <ion-icon name="logo-wechat" class="hidden lg:block xl:block w-[30px] h-[30px] text-purple-800  ml-[10px] mt-[10px]"  ></ion-icon>
+       
+         <img src="dating-imgages/falz.jpeg" alt="" class=" hidden lg:block xl:block w-[30px] h-[30px] rounded-[20px] ml-[10px] mt-[10px] ">
+        
+        </div>
+        <!-- End of search bar -->
+        <div class="block lg:flex xl:flex ">
+        <div class="hidden lg:block xl:block w-[80%] lg:w-[20%] xl:w-[20%] h-screen lg:h-[500px]  bg-purple-800 mt-[20px] ml-[20px]  pl-[40px] text-white pt-[40px]  " id="dashboard" style="border-top-left-radius: 70px;">
+            <div class="flex  hover:font-[700] hover:text-[20px]"><ion-icon name="home-outline" class="mt-9"></ion-icon><p class="ml-2 mt-[30px]"> Home</p></div>
+            <a href="dashboard.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><img src="dating-imgages/falz.jpeg" alt="" class="w-[20px] h-[20px] rounded-[50px] mt-1   "><p class="ml-2"> Profile</p></div></a>
+            <a href="upload.html"><div class="flex  hover:font-[700] hover:text-[19px] mt-[20px]"><ion-icon name="videocam-off-outline" class=" mt-1"></ion-icon><p class="ml-2"> Upload video/image</p></div></a>
+            <a href="hookup.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon class="mt-1 " name="car-outline"></ion-icon><p class="ml-1"> My Hookup</p></div></a>
+            <a href="update.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-outline" class="mt-1"></ion-icon><p class="ml-1"> Update Profile</p></div></a>
+            <a href="notification.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1" ></ion-icon><p class="ml-1"> Notification</p></div></a>
+            <a href="Report.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1" ></ion-icon><p class="ml-1"> Report</p></div></a>
+
+            <a href="logout.html"><div class="flex  hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1"></ion-icon><p class="ml-1"> Logout</p></div></a>
+        </div>
+        <div id="search" class="block lg:hidden xl:hidden">
+        <input type="text" placeholder="Search..." class=" block lg:hidden xl:hidden mt-5 mx-auto w-[70vw] py-2 rounded-[50px] px-8 lg:w-[600px]   text-purple-800 ">
+        <ion-icon name="search-outline" class=" block lg:hidden xl:hidden mt-[-30px] ml-[17vw] md:ml-[560px]" ></ion-icon>
+        </div>
+        
+    <div class="pt-[20px] lg:pt-[0px] xl:pt-[0px] ml-[20px] lg:ml-[20px] xl:ml-[20px] mt-[40px] lg:mt-[20px] xl:mt-[20px]  w-[80%]  lg:w-[75%] xl:w-[75%]   rounded-[20px] py-5 bg-white" id="profile"  > 
+       <div class="flex justify-between  lg:pt-[10px] xl:pt-[10px] pl-[10px] min-w-full container   ">
+        <div >
+        <ion-icon name="trash-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
+        <ion-icon name="stats-chart-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
+        <ion-icon name="person-outline" class="text-purple-800 w-[20px] h-[20px] "></ion-icon>
+        <ion-icon name="videocam-off-outline" class="w-[20px] h-[20px] text-purple-800 "></ion-icon>
+
+    </div>
+           <div class=" pr-[25px]  ">
+        <ion-icon name="globe-outline" class="text-purple-800  w-[20px] h-[20px]  "></ion-icon>
+        <ion-icon name="mail-open-outline" class=" text-purple-800 lg:w-[20px] lg:h-[20px]  "></ion-icon>
+        <ion-icon name="notifications-outline" class="  text-purple-800 lg:w-[20px] lg:h-[20px] " ></ion-icon>
+    </div>
+    </div>
+    <div class=" mx-auto  min-w-[50vw]   text-purple-800 text-2xl ">
+        <p class="  text-center">Report</p></div>
+    
+    <div class=" mt-[20px] min-w-[50vw]  ">
+        <form action="" class="mx-6"   >
+            <input type="text" placeholder="Incicident" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] pl-3 focus:outline-purple-800 rounded-[5px]" ><br>
+            <input type="text" placeholder="Date of Incident" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40] my-1 pl-3 focus:outline-purple-800 rounded-[5px]"><br>
+            <input type="text" placeholder="Name" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] my-1 pl-3 focus:outline-purple-800 rounded-[5px]"><br>
+            <input type="text" placeholder=" Offender's Name" class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] my-1 pl-3 focus:outline-purple-800 rounded-[5px]"><br>
+            <input type="text" placeholder=" Offender's Id " class="border-2 border-black w-[65vw] h-[45px] lg:h-[40px] my-1 pl-3 focus:outline-purple-800 rounded-[5px]" ><br>
+            <textarea name="" id="" cols="10" rows="10"  class="border-2 border-black w-[65vw] h-[45px] lg-h-[40px] text-gray-300 my-1 pl-3 focus:outline-purple-800 rounded-[5px]" >Narration</textarea><br>
+            <button type="submit" class="border-2 border-black w-[55vw] h-[45px] lg-h-[40px] my-1 mx-6 rounded-2xl bg-purple-800 text-white">Submit</button>
+        </form>
+
+        
+    </div>    
+           
+            
+        
+    </div>
+           
+    </div>
+
+    <script>
+        const menu = document.getElementById("menu");
+        const dashboard= document.getElementById("dashboard");
+        const search = document.getElementById("search");
+        const profile = document.getElementById("profile");
+        menu.addEventListener("click", function(){
+            dashboard.classList.toggle("hidden");
+            search.classList.toggle("hidden");
+            profile.classList.toggle("hidden");
+        })
+       
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+
+body{
+      overflow-x: hidden;
+}
+.tonack{
+      font-family: 'Bodoni Moda';
+}
+.header{
+      background-image: url(/asset/lsve.jfif);
+      background-size: cover;
+      width: 100%;
+      /* height: 85vh; */
+}
+.jersey-15-regular {
+      font-family: "Jersey 15", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .dm-sans-regular {
+      font-family: "DM Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+    }
+    .quicksand-font {
+      font-family: "Quicksand", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
+      font-style: normal;
+    }
+    
+    
+.italic-des{
+      color:rgb(231, 67, 138);
+            font-style: italic;
+}
+.more{
+      color: rgb(98, 93, 93);
+      font-size: 17px;
+      color:#484747;
+}
+.exp{
+      -tw-text-opacity: 1;
+      color: rgb(126 34 206 / var(--tw-text-opacity));
+            font-style: normal;
+}
+.image-cont{
+      border-radius:48%;
+      padding: 10px, 20px, 20px 20px;
+      background-image: url(./asset/sexy-3048156_960_720.jpg);
+      background-size: cover;
+      height: 470px;
+      
+
+
+}
+.join-icon{
+      width: 80px;
+      height:80px;
+      display: flex;
+      place-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 30px;
+}
+
+/* .blob1{
+      background-image: url(/asset/blob1.png);
+      background-size: cover;
+      background-position: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 50vh;
+      opacity: 5;
+} */
+.svg-container{
+      position: relative;
+      top: 0;
+      width: 40vw;
+      height: 100vh; /* Set height to full viewport height */
+
+}
+/* .slider-wrapper{
+      background-image: url(/asset/lsve.jfif);
+      background-size: cover;
+} */
+.profile-desc{
+      background:rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(5px);
+      width: 300px;
+
+}
+
+.header2{
+      position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(asset/perfect\ girl.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(asset/perfect\ girl.jpg
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.header .container {
+      position: relative;
+      height: 100%;
+    }
+    
+    .header .header-content {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 55%;
+      background-color: red;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      color: #fff;
+    }
+
+    .header .header-content .header-title {
+      font-size: calc(40px + (120 - 40) * ((100vw - 600px) / (1600 - 600)));
+      font-weight: bold;
+      line-height: .7;
+      margin-bottom: 25px;
+      color: inherit;
+    }
+    .header-title-cont{
+      position: inherit;
+      width: 50vw;
+    }
+   
+
+    .cedarville-cursive-regular {
+      font-family: "Cedarville Cursive", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .briem-hand-font {
+      font-family: "Briem Hand", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .calligraffitti-regular {
+      font-family: "Calligraffitti", cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .sexy-ladies img{
+       width: 250px;
+       height:300px;
+       margin-top: 30px;
+       border-radius: 20px;
+    }
+
+    
+    .sexybg{
+      width: 250px;
+    }
+    .exotic-women{
+      width: 300px;
+      height:300px;
+      object-fit: cover;
+    }
+    @media (max-width:768px) {
+      .header-title-cont{
+            width: 90vw;
+      }
+      .sexy-ladies img{
+            width: 60vw;
+            object-fit: cover;
+      }
+      .profile-desc{
+            width: 300px;
+      }
+    }
+    @media (max-width: 399px) {
+      .profile-desc{
+            width: 280px;
+      }
+      
+    }
+    @media (max-width: 366px) {
+      .profile-desc{
+            width: 250px;
+      }
+      
+    }
+    .footer{
+      position: relative;
+      background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(asset/nikki.webp);
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(71, 5, 88, 0.5)), url(asset/nikki.webp
+      );
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: black;
+    }
+ 
+    @media (max-width: 768px) {
+
+      #navContent{
+         flex-direction: column;
+         position: absolute;
+         margin-top: -10px;
+         height: 50vh;
+         z-index: 5;
+         width: 100vw;
+     }
+     #navContent button {
+      position: absolute;
+      bottom: 20px;
+     }      
+    }
+    

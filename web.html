@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-knack</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="flex w-[98vw]   mx-2 md:mx-5 py-3  justify-between ">
+        <div class="flex px-0 space-x-0 md:space-x-2 md:items-center">
+              <img src="./asset/logo-removebg-preview.png" alt="" class="cursor w-[50px] h-[40px] sm:w-[80px]">
+              <h1 class="font-bold text-lg sm:text-3xl cursor-pointer text-purple-700 animate-pulse jersey-15-regular dm-sans-regular" role="button" >To Nack</h1>
+        </div>
+       
+        <div class=" space-x-10 mx-5 items-center hidden md:flex" id="navContent">
+          <div class=" space-x-10">
+              <a href="#" class="font-semibold text-md hover:text-purple-300 text-purple-400">Home</a>
+              <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Contact</a>
+              <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Blog</a>
+              <a href="#"  class="font-semibold text-md dm-sans-regular hover:text-purple-300">Privacy</a>
+           </div>
+          <a href="gendervalidation.html">
+          <button class="mr-5 text-white  rounded-xl text-xs md:text-md md:rounded-full bg-gradient-to-r from-purple-600 to-pink-400 border-2 border-purple-600  font-semibold px-5 py-1 md:py-3 text-center w-[100px] md:w-[180px] height-[60px] hover:opacity-7">Sign Up/Sign In</button>
+          </a>
+        </div>
+
+        <!-- <div>
+          <a class=" cursor-pointer md:ml-[80%]   mt-[50px] bg-gradient-to-r from-purple-500 to-pink-500 text- px-4 py-2 rounded-full hover:opacity-80 text-white calligraffitti-regular tracking-wide font-semibold"> 
+            see more</a>
+        </div> -->
+         <button class="text-white flex md:hidden mx-8 animate-pulse cursor-pointer" onclick="openNav()" id="dropBtn" role="button">
+        
+         <img width="48" height="64" src="https://img.icons8.com/wired/64/FFFFFF/xbox-menu.png" alt="xbox-menu" role="button" />
+        </button> 
+     
+  </nav>
+
+
+
+  <div class="flex justify-around flex-wrap mt-20 flex-1 ">
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="asset/pexels.jpg" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> 
+                Talk to 
+            </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="asset/pexels2.jpg" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Nkechi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">        
+        <img src="asset/pexels1.jpg" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="flex justify-around flex-wrap mt-20">
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="asset/pexels3.jpg" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="asset/pexels4.jpg" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">        
+        <img src="asset/pexels5.jpg" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="flex justify-around flex-wrap mt-20">
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="asset/pexels6.jpg" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">20</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="/dist/5993b8fc-77b6-4d4b-bad6-eb00c09c2978.ea4198b2901f6d848a3141673c474ff9.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to <a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">        
+        <img src="/dist/img.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="flex justify-around flex-wrap mt-20">
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="/dist/5993b8fc-77b6-4d4b-bad6-eb00c09c2978.ea4198b2901f6d848a3141673c474ff9.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="/dist/blacknude.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">        
+        <img src="/dist/black.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="flex justify-around flex-wrap mt-20 flex-1 ">
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="/dist/12.jpg" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> 
+                <a href="">Talk to </a>
+            </button>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="/dist/5993b8fc-77b6-4d4b-bad6-eb00c09c2978.ea4198b2901f6d848a3141673c474ff9.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">        
+        <img src="/dist/black.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="flex justify-around flex-wrap mt-20">
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="/dist/5993b8fc-77b6-4d4b-bad6-eb00c09c2978.ea4198b2901f6d848a3141673c474ff9.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="/dist/blacknude.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">        
+        <img src="/dist/black.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="flex justify-around flex-wrap mt-20">
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="/dist/img.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">
+        <img src="/dist/1678759152a1900c161c70ca4dae949000e74e8749_thumbnail_720x.jpg" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+    <div class="w-[300px] h-[300px] rounded-[20px] bg-pink-50 shadow-xl hover:bg-pink-100 overflow-hidden   transition-all duration-300 hover:shadow-xl relative group ">        
+        <img src="/dist/5993b8fc-77b6-4d4b-bad6-eb00c09c2978.ea4198b2901f6d848a3141673c474ff9.webp" alt="">
+        <div class="bg-slate-200 p-5 w-[302px] h-[120px] rounded-xl absolute top-[180px] left-[50%]  inset-y-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+            <h1 class="text-xl font-medium font-serif">Ngozi</h1>
+            <p class="font-thin">25</p>
+            <p class="font-thin">Ikoyi</p>
+            <a href="gendervalidation.html"  role="button" class="bg-gray-500 px-3 h-auto w-20 rounded-xl relative left-[70%] border-green border-double text-white bottom-5 hover:bg-gray-100 hover:text-black"> Talk to </a>
+        </div>
+    </div>
+  </div>
+
+
+  <footer class="px-5 bg-purple-900 text-white mt-16 footer dm-sans-regular ">
+    <div class="py-5 text-black md:text-white md:px-16">
+        <div class="container">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="md:w-1/3">
+                    <div class="mb-3">
+                        <p class="font-bold text-purple-900 text-lg">Find Your Next Hookup</p>
+                        <p class="">Get connected any time, any day!</p>
+                    </div>
+                    <!-- <address class="tex">
+                        Office Address: <br>
+                        Shop G18 Activities, Lasustech, <br>
+                        Ikorodu, Lagos, Nigeria
+                    </address> -->
+                </div>
+                <div class="md:w-1/3">
+                    <h5 class="">Programs</h5>
+                    <ul class="mt-2 ">
+                        <li>Advanced Seduction Techniques</li>
+                        <li>Secrets of Pleasure</li>
+                        <li>Exploring Kinks</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/3">
+                    <h5 class="">Explore More</h5>
+                    <ul class="mt-2 ">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="createaccount.html">Sign Up</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-b border-gray-700 py-2 mt-5 flex justify-between">
+                <span class="text-black font-semibold dm-sans-regular">© 2024 To-Nack</span>
+                <div class="flex space-x-3">
+                    <a href="#" class="text-purple-900 hover:text-white"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-purple-900 hover:text-white"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-purple-900 hover:text-white"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-purple-900 hover:text-white"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+            <div class="mt-3 text-white">
+                <p>For inquiries, contact us via WhatsApp:</p>
+                <p>+1 (123) 456-7890 | +1 (987) 654-3210</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="src/output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-white">
+<div class="lg:flex py-10 lg:px-20"> 
+    <div class="hidden lg:block slider rounded-[25px]"> </div>
+
+
+    
+    <div class="lg:w-[50%] w-[100vw] lg:h-[685px] bg-white lg:bg-white rounded-[25px] lg:ml-10 ">
+   
+    <div class="lg:w-[100%] w-[100vw] lg:h-[685px] lg:shadow-2xl lg:shadow-purple-400 bg-white lg:bg-white rounded-[25px] lg:ml-10 ">
+        <h1 class=" lg:mt-[8px] lg:mb-6 lg:pt-16 text-center text-purple-800 text-5xl font-[700]">Login</h1><br><br class="hidden md:block lg:hidden">
+       
+
+       <div class="lg:pl-8 px-6 md:mx-10">
+           <p class="text-[500]">Don't have an account? <a href="createaccount.html"><b class="ml-2 lg:ml-4 text-purple-800">Create an accoount</b></a></p>
+           <p class="mt-2">it will take less than a minute.</p>
+       </div>
+    
+        <form action="" class="px-6 lg:w-[100%] mt-12 lg:float-left lg:ml-0 lg:pl-16 md:mx-12 ml-4">
+
+    
+
+            <div class="w-[100%] flex gap-1 lg:ml-2 lg:w-[95%] lg:h-[55px] md:w-[100%] border-t-0 border-r-0 border-l-0 rounded-none mt-2 lg:mt-0 h-[50px] border-2 border-purple-600 placeholder:text-gray-400 outline-none pl-4 text-lg placeholder:text-[15px] font-[500]">
+                <img class="w-[20px] h-[20px] mt-[14px]" src="./asset/user.png" alt="user">
+                <input class="outline-none flex-1" type="text" name="" required id="" placeholder="Username">
+            </div><br><br><br>    
+    
+            <div class="w-[100%] flex gap-1 lg:ml-2 lg:w-[95%] lg:h-[55px] md:w-[100%] border-t-0 border-r-0 border-l-0 rounded-none mt-2 lg:mt-0 h-[50px] border-2 border-purple-600 placeholder:text-gray-400 outline-none pl-4 text-lg placeholder:text-[15px] font-[500]">
+                <img class="w-[20px] h-[20px] mt-[14px]" src="./asset/padlock.png" alt="user">
+                <input class="outline-none flex-1" type="password" name="" required id="" placeholder="Password">
+            </div><br>
+
+<!-- 
+    
+      
+            <div class="w-[100%] flex gap-1 lg:ml-2 lg:w-[95%] lg:h-[55px] md:w-[100%] border-t-0 border-r-0 border-l-0 rounded-none mt-2 lg:mt-0 h-[50px] border-2 border-purple-600 placeholder:text-gray-400 outline-none pl-4 text-lg placeholder:text-[15px] font-[500]">
+                <img class="w-[20px] h-[20px] mt-[14px]" src="./asset/user.png" alt="user">
+                <input class="outline-none flex-1" type="text" name="" required id="" placeholder="Username">
+            </div><br><br><br>
+    
+               
+            <div class="w-[100%] flex gap-1 lg:ml-2 lg:w-[95%] lg:h-[55px] md:w-[100%] border-t-0 border-r-0 border-l-0 rounded-none mt-2 lg:mt-0 h-[50px] border-2 border-purple-600 placeholder:text-gray-400 outline-none pl-4 text-lg placeholder:text-[15px] font-[500]">
+                <img class="w-[20px] h-[20px] mt-[14px]" src="./asset/padlock.png" alt="user">
+                <input class="outline-none flex-1" type="password" name="" required id="" placeholder="Password">
+            </div><br>
+            <div class="float-right ml-[200px] flex mt-4">
+                <input class="" type="checkbox" name="" id="">
+                <h2 class="text-[500] mt-[-4px] ml-2">Remember Password</h2>
+            </div>
+
+ main -->
+            <a class="mt-2 font-[400] lg:pr-4 float-right" href="#">Forgot Your Password?</a>
+            <br><br><br><br>
+
+            <div class="">
+                <button class="w-[150px] md:w-[141px] h-[50px] text-center border-2 font-[700] text-lg shadow text-white bg-purple-800 ml-[25%] lg:ml-[38%] md:ml-[40%] md:mt-10 lg:mt-0 rounded-[10px]">Login</button>
+
+    
+            </div><br><br><br>
+
+           
+
+        </form>
+    
+    
+    </div>
+</div>
+
+
+
+<style>
+
+
+ .slider{
+    width: 720px;
+    height: 695px;
+    background: url(/asset/1\ \(1\).webp);
+    animation: slide 30s infinite;
+ }
+
+ @keyframes slide{
+    25%{
+        background: url(/asset/12.webp);
+    }
+    50%{
+        background: url(/asset/13.webp);
+    }
+    75%{
+        width: 720px;
+        background: url(/asset/1\ \(2\).jpg);
+    }
+    100%{
+        background: url(/asset/12.webp);
+    }
+ }
+
+
+
+</style>
+
+
+
+
+
+</body>
+</html>

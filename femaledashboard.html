@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Female Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="./src/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+</head>
+<body>
+    <div class="bg-white w-[100vw] lg:px-16 lg:w-[100vw] h-[100vh] lg:h-[620px] ">
+        
+        <!-- search bar -->
+        <nav class="flex text-white pt-[20px] lg:pt-[40px] " >
+            <div class="flex">   
+                <img onclick="menuBtn()" class="w-8 h-8 ml-[40px] lg:hidden" id="menu" src="/asset/menu.png" alt="menu">
+
+                <h1 class=" animate-bounce  pt-[8px] text-purple-800 text-3xl pl-[110px] lg:text-4xl lg:pl-[30px] lg:w-[20vw] font-[700]  " >  TO-KNACK</h1>
+            </div>
+            <div class="flex">
+                <input type="text" placeholder="Search..." class=" hidden lg:block h-[50px] rounded-[50px] pl-[60px]  bg-gray-200 lg:ml-[25px] lg:w-[63vw]  text-purple-800 placeholder:text-0 outline-none">
+                <ion-icon name="search-outline" class="hidden lg:block w-[20px] h-[20px] text-purple-800 ml-[-50px] mt-[20px] font-[700]" ></ion-icon>
+               <ion-icon name="notifications-outline" class="hidden cursor-pointer lg:block w-[30px] h-[30px] text-purple-800 ml-[40px] mt-[10px]" ></ion-icon>
+               <ion-icon name="logo-wechat" class="hidden lg:block w-[30px] h-[30px] text-purple-800 cursor-pointer ml-[10px] mt-[10px]"  ></ion-icon>
+               <img src="/asset/1 (1).webp" alt="" class="cursor-pointer hidden lg:block h-[30px] rounded-[20px] ml-[10px] mt-[10px] ">
+            </div>
+        </nav><br class="hidden lg:block"><br class="hidden lg:block">
+        <!-- End of search bar -->
+
+
+        <div class="lg:flex gap-1 justify-between">
+
+            <div class="hidden lg:block w-[300px] md:w-[350px] mt-6 lg:mt-0 ml-4 md:ml-8 lg:ml-0 h-[600px] px-10 pt-12 bg-purple-800 rounded-t-[40px] rounded-b-[40px]" id="menubar">
+
+                <a class="flex  text-white ml-4 font-[700] text-[20px]">
+                    <ion-icon name="home-outline" class="mt-[-5px] w-10 h-10"></ion-icon>
+                    <p onclick="page()" class="ml-2 cursor-pointer"> Home</p>
+                </a><br>
+    
+                <a href="femaledashboard.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><img src="/asset/1 (1).webp" alt="" class="w-[22px] h-[22px] rounded-[20px] mt-1   "><p class="ml-2"> Profile</p></div></a>
+
+                <a href="updateprofile.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-add-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1">Update Profile</p></div></a>
+    
+                <a href="uploadimage.html"><div class="flex text-white hover:font-[700] hover:text-[19px] mt-[20px]"><ion-icon class="mt-1 w-[20px] h-[20px]" name="videocam-outline"></ion-icon><p class="ml-2"> Upload video/image</p></div></a>
+    
+                <a href="addwallet.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="wallet-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1">Add Wallet</p></div></a>
+    
+                <a href="request.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1  w-[20px] h-[20px]" ></ion-icon><p class="ml-1">Request</p></div></a>
+    
+                <a href=""><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="chatbox-ellipses-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1">Meetup Form</p></div></a>
+                   
+                <a href=""><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1"> Logout</p></div></a>
+            </div>
+
+            <div class="" id="content">
+                <div class="lg:w-[70vw] mt-4 lg:mt-0 w-[100vw] lg:rounded-t-[40px] lg:rounded-b-[40px] h-[870px] md:h-[100vh] lg:pl-10 lg:h-[600px] bg-purple-800">
+
+                    <div class="">
+
+                        <div class="flex justify-center  lg:justify-between pt-6 px-20">
+                            <div class="flex gap-4">
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="notifications-outline" class=" text-white w-[24px] h-[24px]" ></ion-icon>
+                                </div>
+        
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="mail-open-outline" class=" text-white w-[24px] h-[24px] "></ion-icon>
+                                </div>
+                
+                                <div class="text-white cursor-pointer">
+                                    <ion-icon name="videocam-off-outline" class="w-[24px] h-[24px] mr-4"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class=" cursor-pointer"> 
+                                    <ion-icon name="globe-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+                
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="trash-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+        
+                            
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="person-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+                
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="stats-chart-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+                                </div>
+                           </div>
+      
+                        </div>
+
+                        <div class="lg:flex justify-center lg:px-10">
+                           <div class=" text-center">
+                               <p class=" mt-[30px] text-white text-3xl font-[500]">Profile</p><br>
+    
+                               <img src="/asset/1 (1).webp" alt="pic" class=" mt-[20px] w-[300px] mx-[auto] md:mx-[auto] lg:w-[350px]  rounded-full">
+    
+                               <div class="flex justify-center gap-2">
+                                  <p class="  mt-[10px]  text-white"> Status: <b>Available</b></p>
+                                   <p class="w-[10px] h-[10px] mt-[20px] bg-green-600 rounded-[25px]"></p>
+                               </div>
+                           </div>
+                    
+                           <div class="lg:mt-32 lg:ml-20 mt-4 pl-8 lg:mr-[300px]">
+                               <h2 class=" text-white text-[20px]"> <b>About</b></h2>
+
+                               <div class="">
+                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md w-[90%] md:w-[95%] text-white lg:w-[260px]">Name: &nbsp; Alice Felicia</p>
+
+                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md text-white w-[90%] md:w-[95%] lg:w-[260px]">Date Applied: &nbsp; 21st April, 2023.</p>
+
+                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 w-[90%] rounded-md md:w-[95%] text-white lg:mt-[10px] lg:w-[260px]">Location:  &nbsp; Ikorodu, Lagos.</p>
+                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md w-[90%] md:w-[95%] text-white lg:mt-[10px] lg:w-[260px]">Age:  &nbsp; 24</p>
+                                  <p class="bg-gray-500 mt-4 h-[35px] text-center pt-1 rounded-md w-[90%] md:w-[95%] lg:w-[260px] text-white lg:mt-[10px]">Email:  alicefelicia@gmail.com</p>  
+                               </div>  
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function menuBtn() {
+            const menu = document.getElementById("menu");
+            const content = document.getElementById("content");
+            const menubar = document.getElementById("menubar");
+            
+            
+            document.getElementById("content").classList.add("hidden");
+            document.getElementById("menubar").classList.remove("hidden");
+        }
+
+        function page() {
+            const menu = document.getElementById("menu");
+            const content = document.getElementById("content");
+            const menubar = document.getElementById("menubar");  
+
+            document.getElementById("content").classList.remove("hidden");
+            document.getElementById("menubar").classList.add("hidden");
+       }
+        
+
+
+        
+        // menu.addEventListener("click", function(){
+        //     dashboard.classList.toggle("hidden");
+        //     search.classList.toggle("hidden");
+        //     profile.classList.toggle("hidden");
+        // })
+       
+    </script>
+
+</body>
+</html>

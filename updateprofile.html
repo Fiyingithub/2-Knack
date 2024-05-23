@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+</head>
+<body  >
+    <div class="bg-white w-[100vw] lg:px-16 lg:w-[100vw] h-[100vh] lg:h-[620px]  ">
+        
+        <!-- search bar -->
+        <nav class="flex text-white pt-[20px] lg:pt-[40px] " >
+            <div class="flex">
+                <img onclick="menuBtn()" class="w-8 h-8 ml-[40px] lg:hidden" id="menu" src="/asset/menu.png" alt="menu">
+
+                <h1 class=" animate-bounce  pt-[8px] text-purple-800 text-3xl pl-[110px] lg:text-4xl lg:pl-[30px] lg:w-[20vw] font-[700]  " >  TO-KNACK</h1>
+            </div>
+            <div class="flex">
+                <input type="text" placeholder="Search..." class=" hidden lg:block h-[50px] rounded-[50px] pl-[60px]  bg-gray-200 lg:ml-[25px] lg:w-[63vw]  text-purple-800 placeholder:text-0 outline-none">
+                <ion-icon name="search-outline" class="hidden lg:block w-[20px] h-[20px] text-purple-800 ml-[-50px] mt-[20px] font-[700]" ></ion-icon>
+               <ion-icon name="notifications-outline" class="hidden cursor-pointer lg:block w-[30px] h-[30px] text-purple-800 ml-[40px] mt-[10px]" ></ion-icon>
+               <ion-icon name="logo-wechat" class="hidden lg:block w-[30px] h-[30px] text-purple-800 cursor-pointer ml-[10px] mt-[10px]"  ></ion-icon>
+               <img src="/asset/1 (1).webp" alt="" class="cursor-pointer hidden lg:block h-[30px] rounded-[20px] ml-[10px] mt-[10px] ">
+            </div>
+        </nav><br class="hidden lg:block"><br class="hidden lg:block">
+        <!-- End of search bar -->
+
+
+        <div class="flex gap-1 justify-center lg:justify-between">
+
+            <div class="hidden lg:block w-[300px] md:w-[350px] mt-6 lg:mt-0 ml-[-70px] md:ml-[-353px] lg:ml-0 h-[600px] px-10 pt-12 bg-purple-800 rounded-t-[40px] rounded-b-[40px]" id="menubar">
+
+                <a class="flex  text-white ml-4 font-[700] text-[20px]">
+                    <ion-icon name="home-outline" class="mt-[-5px] w-10 h-10"></ion-icon>
+                    <p onclick="page()" class="ml-2 cursor-pointer"> Home</p>
+                </a><br>
+    
+                <a href="femaledashboard.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><img src="/asset/1 (1).webp" alt="" class="w-[22px] h-[22px] rounded-[20px] mt-1   "><p class="ml-2"> Profile</p></div></a>
+
+                <a href="updateprofile.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="person-add-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1">Update Profile</p></div></a>
+    
+                <a href="uploadimage.html"><div class="flex text-white hover:font-[700] hover:text-[19px] mt-[20px]"><ion-icon class="mt-1 w-[20px] h-[20px]" name="videocam-outline"></ion-icon><p class="ml-2"> Upload video/image</p></div></a>
+    
+                <a href="addwallet.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="wallet-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1">Add Wallet</p></div></a>
+    
+                <a href="request.html"><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="notifications-outline" class="mt-1  w-[20px] h-[20px]" ></ion-icon><p class="ml-1">Request</p></div></a>
+    
+                <a href=""><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="chatbox-ellipses-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1">Meetup Form</p></div></a>
+                   
+                <a href=""><div class="flex text-white hover:font-[700] hover:text-[20px] mt-[20px]"><ion-icon name="exit-outline" class="mt-1  w-[20px] h-[20px]"></ion-icon><p class="ml-1"> Logout</p></div></a>
+            </div>
+
+            <div class="" id="content">
+                <div class="lg:w-[70vw] mt-4 lg:mt-0 w-[100vw] md:[100vw] lg:rounded-t-[40px] lg:rounded-b-[40px] h-[870px] md:h-[100vh] lg:pl-10 lg:h-[600px] bg-purple-800">
+                    
+
+                    <div class="" >
+
+                        <div class="flex justify-center  lg:justify-between pt-6 px-20">
+                            <div class="flex gap-4">
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="notifications-outline" class=" text-white w-[24px] h-[24px]" ></ion-icon>
+                                </div>
+        
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="mail-open-outline" class=" text-white w-[24px] h-[24px] "></ion-icon>
+                                </div>
+                
+                                <div class="text-white cursor-pointer">
+                                    <ion-icon name="videocam-off-outline" class="w-[24px] h-[24px] mr-4"></ion-icon>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4">
+                                <div class=" cursor-pointer"> 
+                                    <ion-icon name="globe-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+                
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="trash-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+        
+                            
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="person-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+                
+                                <div class=" cursor-pointer">
+                                    <ion-icon name="stats-chart-outline" class="text-white w-[24px] h-[24px]"></ion-icon>
+                                </div>
+                                </div>
+                           </div>
+      
+                        </div>
+
+                        <div class="">
+                           <div class="">
+                               <div class="">
+                                   <p class=" mt-[20px] text-center lg:mx-0 text-white text-3xl font-[500]">Update Profile</p>
+                               </div>
+                           </div>
+
+                           <form action="" class="pl-8 text-white  md:pt-16 lg:pt-8 pt-10">
+                            <div class="md:flex md:mt-4 md:gap-4">
+              
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] pl- text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/user.png" alt="user">
+                                    <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Firstname">
+                                </div><br class="block md:hidden">
+              
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/user.png" alt="user">
+                                    <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Lastname">
+                                </div><br class="block md:hidden">
+                           </div>
+              
+                            <div class="md:flex md:mt-8 lg:mt-4 md:gap-4">
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] pl- text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/briefcase (1).png" alt="Occupation">
+                                    <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Occupation"><br class="block md:hidden"><br class="block md:hidden">
+                                </div><br class="block md:hidden">
+              
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] pl- text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/location (1).png" alt="user">
+                                    <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Location">
+                                </div><br class="block md:hidden">
+                           </div>
+              
+                          <div class="md:flex md:mt-8 lg:mt-4 md:gap-4">
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] pl- text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[13px]" src="./asset/age.png" alt="user">
+                                    <input class="bg-transparent  outline-none flex-1" type="text" name="" required id="" placeholder="Age"><br class="block md:hidden"><br class="block md:hidden">
+                                </div><br class="block md:hidden">
+               
+                                <div class="flex justify-center gap-1  border-2 border-white w-[90%] md:w-[45%] h-[45px] md:h-[55px] lg:h-[50px] rounded-md pl-[10px] text-lg">
+                                    <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/phone-call (1).png" alt="user">
+                                    <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Phone Number"><br class="block md:hidden"><br class="block md:hidden">
+                                </div><br class="block md:hidden">
+                            </div>
+                              
+                            <div class="flex justify-center gap-1 border-2 border-white w-[90%] md:w-[92%] h-[45px] md:h-[55px] lg:h-[50px] pl-[10px] md:mt-8 lg:mt-4 rounded-md text-lg">
+                                <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/home-address (1).png" alt="user">
+                                <input class="bg-transparent outline-none flex-1" type="text" name="" required id="" placeholder="Home Address"><br class="block md:hidden"><br class="block md:hidden">
+                            </div><br class="md:hidden">
+              
+                            <div class="flex justify-center gap-1 border-2 border-white w-[90%] md:w-[92%] h-[45px] md:h-[55px] lg:h-[50px] md:mt-8 lg:mt-4 rounded-md pl-[10px] text-lg">
+                                <img class="w-[20px] h-[20px] mt-[10px]" src="./asset/email.png" alt="user">
+                                <input class="bg-transparent outline-none flex-1" type="email" name="" required id="" placeholder="Email Address"><br class="block md:hidden"><br class="block md:hidden">
+                            </div><br><br class="lg:hidden"><br class=" lg:hidden">
+              
+                            <button class="w-[150px] md:w-[200px] ml-[25vw] md:ml-[35%] lg:ml-[40%] md:h-[50px] lg:mt-[8px] text-purple-800 h-[40px] bg-white rounded-md font-[700]">Save</button>
+
+                          </form>
+                           
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+           
+           
+           
+           
+            
+
+    <script>
+
+
+        function menuBtn() {
+            const menu = document.getElementById("menu");
+            const content = document.getElementById("content");
+            const menubar = document.getElementById("menubar");
+            
+            
+            document.getElementById("content").classList.add("hidden");
+            document.getElementById("menubar").classList.remove("hidden");
+        }
+
+        function page() {
+            const menu = document.getElementById("menu");
+            const content = document.getElementById("content");
+            const menubar = document.getElementById("menubar");  
+
+            document.getElementById("content").classList.remove("hidden");
+            document.getElementById("menubar").classList.add("hidden");
+       }
+       
+
+       
+    </script>
+</body>
+</html>
